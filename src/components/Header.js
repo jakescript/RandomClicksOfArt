@@ -1,7 +1,5 @@
 import React, { Component } from "react"
-import { FaInfoCircle, FaGit } from "react-icons/fa";
-import { FaWindowClose } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { FaInfoCircle, FaWindowClose,  FaGithub} from "react-icons/fa";
 import './header.css';
 import Modal from "react-modal"
 class Header extends Component {
@@ -23,8 +21,8 @@ class Header extends Component {
         let modalStyles = {
             content: {
                 margin: "0 auto",
-                height: "500px",
-                width: "500px",
+                height: "auto",
+                width: "40vw",
                 textAlign: "left"
             }
         }
@@ -55,7 +53,8 @@ class Header extends Component {
                         <li><a href="https://github.com/harvardartmuseums/api-docs">HAM API</a></li>   
                     </ul>
 
-                    <a href="https://github.com/jakescript">{<FaGithub className="gitIco" size="3em"/>}</a>
+                    <a href="https://github.com/jakescript/RandomClicksOfArt">{<FaGithub className="gitIco" size="3em"/>}</a>
+
                 </Modal>
             </div>
         )

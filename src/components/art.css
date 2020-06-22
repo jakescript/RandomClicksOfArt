@@ -23,14 +23,14 @@ body{
 }
 
 .image-container{
-    width: 700px;
-    height: 700px;
-    margin: 0 auto
+    width: 50vw;
+    height: 50vh;
 }
 
 .art-img{
-    max-width: 100%;
-    max-height: 100%;
+    padding: 10px;
+    max-width: 90%;
+    max-height: 90%;
 }
 
 .next-button{
@@ -40,4 +40,19 @@ body{
 
 .begin-button{
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper{
+        grid-template-columns: 100%;
+    }
+
+    .image-container{
+        margin: 0 auto;
+    }
+
+    .art-titles{
+        text-align: left;
+    }
+
 }
