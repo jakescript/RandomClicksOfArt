@@ -1,0 +1,43 @@
+body{
+    text-align: center;
+}
+
+.wrapper{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 1em;
+}
+
+.art-titles{
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.art-titles h2{
+    font-weight: 500;
+}
+
+.art-titles h3{
+    font-weight: 300;
+}
+
+.image-container{
+    width: 700px;
+    height: 700px;
+    margin: 0 auto
+}
+
+.art-img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.next-button{
+    cursor: pointer;
+    margin-top: 0px
+}
+
+.begin-button{
+    cursor: pointer;
+}
