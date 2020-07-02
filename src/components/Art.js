@@ -37,7 +37,7 @@ class Art extends Component {
       return (
         <div className="welcome">
           <div className="welcome-items">
-            <h1>Welcome to a random clicks of art!</h1>
+            <h1>Welcome to random clicks of art!</h1>
             <FaEye className="begin-button" size="3em" onClick={this.handleNext}/>
           </div>
         </div>
