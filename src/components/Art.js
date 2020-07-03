@@ -10,6 +10,12 @@ class Art extends Component {
       loading: false,
       record: null
     }
+
+    document.addEventListener("keydown", (evt) => {
+      if (evt.keyCode === 39) {
+        this.handleNext()
+      }
+    })
   }
 
   handleNext = () => {
@@ -38,7 +44,7 @@ class Art extends Component {
         <div className="welcome">
           <div className="welcome-items">
             <h1>Welcome to random clicks of art!</h1>
-            <FaEye className="begin-button" size="3em" onClick={this.handleNext}/>
+            <FaEye className="button-cursor" size="3em" onClick={this.handleNext} />
           </div>
         </div>
       )
@@ -70,8 +76,10 @@ class Art extends Component {
           </div>
 
         </div>
-        <FaArrowCircleRight size="2em" className="next-button" onClick={this.handleNext} />
-
+        <div className="next-section">
+          <FaArrowCircleRight size="2em" className="button-cursor" onClick={this.handleNext} />
+          <p>(right arrow key)</p>
+        </div>
       </div>
     )
   }

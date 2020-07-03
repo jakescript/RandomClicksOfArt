@@ -36,7 +36,7 @@ class Header extends Component {
         return (
             <div className="headerStyles">
                 {Modal.setAppElement('#root')}
-                {<FaInfoCircle size="2em" className="infoBtn" onClick={this.openModal} />}
+                <FaInfoCircle size="2em" className="infoBtn" onClick={this.openModal} />
                 <Modal style={modalStyles} isOpen={this.state.infoModal}>
                     {<FaWindowClose size="1.5em" onClick={this.closeModal} style={closeBtn}/>}
                     <h2>Information</h2>
