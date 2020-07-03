@@ -1,6 +1,6 @@
-body{
+*{
     text-align: center;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .wrapper{
@@ -72,7 +72,17 @@ body{
 
 @media only screen and (max-width: 850px) {
     .wrapper{
-        grid-template-columns: 100%;
-        grid-template-rows: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-container{
+        height: 50vh;
+    }
+
+    .art-img{
+        max-width: 90%;
     }
 }

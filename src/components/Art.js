@@ -74,7 +74,6 @@ class Art extends Component {
           <div className="image-container">
             {this.state.record.primaryimageurl ? <img alt="art-image" className="art-img" src={this.state.record.primaryimageurl} /> : <div>No Img</div>}
           </div>
-
         </div>
         <div className="next-section">
           <FaArrowCircleRight size="2em" className="button-cursor" onClick={this.handleNext} />
