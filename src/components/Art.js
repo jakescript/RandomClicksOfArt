@@ -72,7 +72,7 @@ class Art extends Component {
           </div>
 
           <div className="image-container">
-            {this.state.record.primaryimageurl ? <img className="art-img" src={this.state.record.primaryimageurl} /> : <div>No Img</div>}
+            {this.state.record.primaryimageurl ? <img alt="art-image" className="art-img" src={this.state.record.primaryimageurl} /> : <div>No Img</div>}
           </div>
 
         </div>
